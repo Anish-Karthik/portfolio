@@ -10,16 +10,19 @@ const EmailSection = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const sendEmail = async (e: any) => {
-    await fetch('/api/send', {
-      method: 'POST',
-      body: JSON.stringify({
-        from: email,
-        subject: subject,
-        text: message
-      }),
-      headers: { 'Content-Type': 'application/json' }
-    });
+  async function sendEmail(e: any) {
+    // e.preventDefault();
+    // await fetch('/api/send', {
+    //   method: 'POST',
+    //   body: JSON.stringify({
+    //     from: email,
+    //     subject: subject,
+    //     text: message
+    //   }),
+    //   headers: { 'Content-Type': 'application/json' }
+    // });
+    // alert("Email sent successfully!");
+    console.log("Email sent successfully!");
   }
     
 
@@ -40,10 +43,10 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/Anish-Karthik">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link href="https://www.linkedin.com/in/anish-karthik/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
@@ -64,7 +67,7 @@ const EmailSection = () => {
               required
               onChange={(e) => setEmail(e.target.value)}
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="jacob@google.com"
+              placeholder="anishkarthik.54321@google.com"
             />
           </div>
           <div className="mb-6">
