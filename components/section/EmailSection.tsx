@@ -1,10 +1,28 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import GithubIcon from "@/public/github-icon.svg";
 import LinkedinIcon from "@/public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
 const EmailSection = () => {
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendEmail = async (e: any) => {
+    await fetch('/api/send', {
+      method: 'POST',
+      body: JSON.stringify({
+        from: email,
+        subject: subject,
+        text: message
+      }),
+      headers: { 'Content-Type': 'application/json' }
+    });
+  }
+    
+
   return (
     <section
       id="contact"
@@ -42,7 +60,9 @@ const EmailSection = () => {
             <input
               type="email"
               id="email"
+              value={email}
               required
+              onChange={(e) => setEmail(e.target.value)}
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="jacob@google.com"
             />
@@ -58,6 +78,8 @@ const EmailSection = () => {
               type="text"
               id="subject"
               required
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="Just saying hi"
             />
@@ -72,6 +94,8 @@ const EmailSection = () => {
             <textarea
               name="message"
               id="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="Let's talk about..."
             />
@@ -79,6 +103,7 @@ const EmailSection = () => {
           <button
             type="submit"
             className="bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+            onSubmit={(e) => sendEmail(e)}
           >
             Send Message
           </button>

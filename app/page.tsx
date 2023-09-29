@@ -1,11 +1,12 @@
-import AboutSection from '@/components/AboutSection'
-import AchievementsSection from '@/components/AchievementsSection'
-import EmailSection from '@/components/EmailSection'
+import AboutSection from '@/components/section/AboutSection'
+import AchievementsSection from '@/components/section/AchievementsSection'
+import EmailSection from '@/components/section/EmailSection'
 import Footer from '@/components/Footer'
-import HeroSection from '@/components/HeroSection'
+import HeroSection from '@/components/section/HeroSection'
 import Navbar from '@/components/Navbar'
-import ProjectsSection from '@/components/ProjectsSection'
+import ProjectsSection from '@/components/section/ProjectsSection'
 import Image from 'next/image'
+import SkillsSection from '@/components/section/SkillsSection'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         {/* <AchievementsSection /> */}
         <AboutSection />
         <ProjectsSection />
+        <SkillsSection />
         <EmailSection />
       </div>
       <Footer />

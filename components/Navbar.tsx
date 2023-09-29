@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import { Button } from "./ui/button";
 
 type NavLinkType = {
   title: string;
@@ -18,6 +19,10 @@ const navLinks: NavLinkType[] = [
   {
     title: "Projects",
     path: "#projects",
+  },
+  {
+    title: "Skills",
+    path: "#skills",
   },
   {
     title: "Contact",
@@ -39,19 +44,19 @@ const Navbar = () => {
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
-            <button
+            <Button
               onClick={() => setNavbarOpen(true)}
               className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
             >
               <Bars3Icon className="h-5 w-5" />
-            </button>
+            </Button>
           ) : (
-            <button
+            <Button
               onClick={() => setNavbarOpen(false)}
               className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
             >
               <XMarkIcon className="h-5 w-5" />
-            </button>
+            </Button>
           )}
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
