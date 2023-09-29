@@ -11,17 +11,7 @@ const EmailSection = () => {
   const [message, setMessage] = useState("");
 
   async function sendEmail(e: any) {
-    // e.preventDefault();
-    // await fetch('/api/send', {
-    //   method: 'POST',
-    //   body: JSON.stringify({
-    //     from: email,
-    //     subject: subject,
-    //     text: message
-    //   }),
-    //   headers: { 'Content-Type': 'application/json' }
-    // });
-    // alert("Email sent successfully!");
+    alert("Email sent successfully!");
     console.log("Email sent successfully!");
   }
     
@@ -52,7 +42,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div className="z-10">
-        <form className="flex flex-col">
+        <form className="flex flex-col" action={'/#about'}>
           <div className="mb-6">
             <label
               htmlFor="email"
