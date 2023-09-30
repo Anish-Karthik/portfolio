@@ -38,7 +38,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I'm a dedicated 3rd-year Computer Science student with a passion for Web Development, Artificial Intelligence, and Cybersecurity. I thrive on continuous learning and stay curious about emerging technologies. As a leader in various roles, I aim to inspire and drive my teams towards excellence. My keen interest in AI and security ensures the quality and safety of my projects, while my problem-solving skills guarantee efficient code.
+            I&apos;m a dedicated 3rd-year Computer Science student with a passion for Web Development, Artificial Intelligence, and Cybersecurity. I thrive on continuous learning and stay curious about emerging technologies. As a leader in various roles, I aim to inspire and drive my teams towards excellence. My keen interest in AI and security ensures the quality and safety of my projects, while my problem-solving skills guarantee efficient code.
           </p>
           <div>
             <Link
