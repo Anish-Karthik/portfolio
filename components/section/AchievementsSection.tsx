@@ -4,7 +4,7 @@ import ProjectTag from "@/components/ProjectTag";
 import { motion, useInView } from "framer-motion";
 import AchievementCard from "@/components/card/AchievementCard";
 
-const tags= ["Symposium", "Hackathon", "Competition", "Other"];
+const tags= [ "Coding", "Symposium", "Certifications", "Hackathon", "Other"];
 export type TAchievement = {
   title: string;
   description: string;
@@ -106,7 +106,124 @@ const achievementsList: TAchievement[] = [
     link: "https://www.linkedin.com/posts/anish-karthik_competition-symposium2022-debugging-activity-7011287008719372289-xcDF?utm_source=share&utm_medium=member_desktop",
     tag: ["Symposium","Competition"],
     date: "02-Dec-2022",
+  },
+
+// \item \href{https://www.linkedin.com/posts/anish-karthik_top-nptel-pythonprogramming-activity-7009905729037889536-DjjW?utm_source=share&utm_medium=member_desktop}{\textbf{Top 1}\% \textbf{Elite Gold badge} Joy of Computing using \textbf{Python}{\faLink}}
+//     \item \href{https://www.linkedin.com/posts/anish-karthik_certificateofcompletion-nptel-cprogramming-activity-7009174502005772288-MaBN?utm_source=share&utm_medium=member_desktop}{\textbf{}\ \textbf{Elite Silver badge}Problem Solving Through Programming in C{\faLink}}
+//     \item \href{https://www.linkedin.com/posts/anish-karthik_nptel-databasemanagementsystem-sql-activity-7063540144347222016-IpAV?utm_source=share&utm_medium=member_desktop}{\textbf{Top 1}\% \textbf{Elite Silver badge} Data Base Management System {\faLink}}
+//     \item \href{https://www.linkedin.com/posts/anish-karthik_nptel-programming-datastructures-activity-7065359761919115264-8CQs?utm_source=share&utm_medium=member_desktop}{\textbf{Top 1}\% \textbf{Elite Gold badge} Programming, Data Structures, and Algorithms {\faLink}}
+//     \item \href{https://www.linkedin.com/posts/anish-karthik_nptel-programming-java-activity-7070760096527503360-_Aqp?utm_source=share&utm_medium=member_desktop}{\textbf{Top 1}\% \textbf{Elite Gold badge} Programming In \textbf{Java} {\faLink}}
+
+  {
+    title: "Joy of Computing using Python",
+    skills: ["Python"],
+    event: "NPTEL",
+    venue: "IIT Madras",
+    description: "Top 1% Elite Gold badge Joy of Computing using Python",
+    link: "https://www.linkedin.com/posts/anish-karthik_top-nptel-pythonprogramming-activity-7009905729037889536-DjjW?utm_source=share&utm_medium=member_desktop",
+    tag: ["Certifications"],
+    date: "Jul-Oct 2022",
+  },
+  {
+    title: "Problem Solving Through Programming in C",
+    skills: ["C"],
+    event: "NPTEL",
+    venue: "IIT Kharagpur",
+    description: "Elite Silver badge Problem Solving Through Programming in C",
+    link: "https://www.linkedin.com/posts/anish-karthik_certificateofcompletion-nptel-cprogramming-activity-7009174502005772288-MaBN?utm_source=share&utm_medium=member_desktop",
+    tag: ["Certifications"],
+    date: "Jul-Oct 2022",
+  },
+  {
+    title: "Data Base Management System",
+    skills: ["SQL"],
+    event: "NPTEL",
+    venue: "IIT Kharagpur",
+    description: "Top 1% Elite Silver badge Data Base Management System",
+    link: "https://www.linkedin.com/posts/anish-karthik_nptel-databasemanagementsystem-sql-activity-7063540144347222016-IpAV?utm_source=share&utm_medium=member_desktop",
+    tag: ["Certifications"],
+    date: "Jan-Mar 2023",
   }, 
+  {
+    title: "Programming, Data Structures, and Algorithms",
+    skills: ["DSA"],
+    event: "NPTEL",
+    venue: "IIT Madras",
+    description: "Top 1% Elite Gold badge Programming, Data Structures, and Algorithms",
+    link: "https://www.linkedin.com/posts/anish-karthik_nptel-programming-datastructures-activity-7065359761919115264-8CQs?utm_source=share&utm_medium=member_desktop",
+    tag: ["Certifications"],
+    date: "Jan-Mar 2023",
+  },
+  {
+    title: "Programming In Java",
+    skills: ["Java"],
+    event: "NPTEL",
+    venue: "IIT Kharagpur",
+    description: "Top 1% Elite Gold badge Programming In Java",
+    link: "https://www.linkedin.com/posts/anish-karthik_nptel-programming-java-activity-7070760096527503360-_Aqp?utm_source=share&utm_medium=member_desktop",
+    tag: ["Certifications"],
+    date: "Jan-Mar 2023",
+  },
+  {
+    title: "Qualified in Kavach'23 Hackathon",
+    skills: ["Web", "Cybersecurity", "Hackathon"],
+    event: "Kavach Hackathon",
+    venue: "PSNA College of Engineering and Technology",
+    description: "Qualified Intra College Kavach'23 Hackathon.",
+    link: "https://www.linkedin.com/posts/anish-karthik_hackathon-cybersecurity-activity-7011287557671722496-4QZ6?utm_source=share&utm_medium=member_desktop",
+    tag: ["Hackathon"],
+    date: "May-Jul-2023",
+  },
+  {
+    title: "Qualified in SIH'23 Hackathon",
+    skills: ["Web", "Cybersecurity", "Hackathon"],
+    event: "SIH'23 Hackathon",
+    venue: "PSNA College of Engineering and Technology",
+    description: "Qualified Intra College SIH'23 Hackathon.",
+    link: "https://www.linkedin.com/posts/anish-karthik_hackathon-cybersecurity-activity-7011287557671722496-4QZ6?utm_source=share&utm_medium=member_desktop",
+    tag: ["Hackathon"],
+    date: "Sep-Nov 2023",
+  },
+//   \href{https://leetcode.com/Anish-Karthik}{leetcode{\faLink}}  &1976 &Knight \\
+// \href{https://www.codechef.com/users/psna_28}{codechef{\faLink}}  &1763 &3 {\faStar} \\
+// \href{https://auth.geeksforgeeks.org/user/anishkarthik54321}{geeksforgeeks{\faLink}} &Rank 2 &380+Ques 
+// \href{https://www.linkedin.com/posts/anish-karthik_googlefarewellcontest-codingcontests-techcommunity-activity-7055582517029982208-RcCu?utm_source=share&utm_medium=member_desktop}{Google farewell Coding  Rank 1108 {\faLink}}
+  {
+    title: "Leetcode Knight (2,016)",
+    skills: ["Coding", "DSA", "Problem Solving"],
+    event: "Leetcode",
+    description: "Leetcode Knight (2,016) and solved 485+ problems",
+    link: "https://leetcode.com/Anish-Karthik",
+    tag: ["Coding"],
+    date: "Oct 2022 - Present",
+  },
+  {
+    title: "Codechef 3 Star (1,763)",
+    skills: ["Coding", "DSA", "Problem Solving"],
+    event: "Codechef",
+    description: "Codechef 3 Star (1,763) and solved 485+ problems. Due 2-3 month codechef had no rated contests I Couldn't able to raise star rating.",
+    link: "https://www.codechef.com/users/psna_28",
+    tag: ["Coding"],
+    date: "Oct 2022 - Present",
+  },
+  {
+    title: "Geeksforgeeks Rank 2",
+    skills: ["Coding", "DSA", "Problem Solving"],
+    event: "Geeksforgeeks",
+    description: "Geeksforgeeks College Rank 2 and solved 500+ problems",
+    link: "https://auth.geeksforgeeks.org/user/anishkarthik54321",
+    tag: ["Coding"],
+    date: "Oct 2022 - Present",
+  },
+  {
+    title: "Google Farewell Coding Rank 1108",
+    skills: ["Coding", "DSA", "Problem Solving"],
+    event: "Google",
+    description: "Google Farewell Coding Rank 1108, 1st in College.",
+    link: "https://www.linkedin.com/posts/anish-karthik_googlefarewellcontest-codingcontests-techcommunity-activity-7055582517029982208-RcCu?utm_source=share&utm_medium=member_desktop",
+    tag: ["Coding"],
+    date: "15-Apr-2023",
+  },  
 ];
 
 const AchievementsSection = () => {

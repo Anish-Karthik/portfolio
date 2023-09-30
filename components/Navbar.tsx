@@ -46,7 +46,7 @@ const Navbar = () => {
           className="text-2xl md:text-5xl text-white font-semibold"
         >
           <Image 
-            src="/images/logo2.png"
+            src="/images/logo.png"
             className="rounded-full zoom-in-75"
             width={50}
             height={50}
