@@ -133,7 +133,7 @@ const SkillsSection = () => {
         My Skills
       </h2>
       
-      <ul ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8 md:gap-12">
+      <ul ref={ref} className="flex flex-wrap justify-evenly gap-12">
         {skills.map((skill, index) => (
           <motion.li
             key={index}

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 const variants = {
   default: { width: 0 },
@@ -17,7 +18,7 @@ const TabButton = ({ active, selectTab, children } : TabButtonProps) => {
 
   return (
     <button onClick={selectTab}>
-      <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
+      <p className={cn("mr-2 sm:mr-3 font-semibold hover:text-white",buttonClasses)}>
         {children}
       </p>
       <motion.div
