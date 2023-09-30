@@ -25,6 +25,10 @@ const navLinks: NavLinkType[] = [
     path: "#skills",
   },
   {
+    title: "Achievements",
+    path: "#achievements",
+  },
+  {
     title: "Contact",
     path: "#contact",
   },
