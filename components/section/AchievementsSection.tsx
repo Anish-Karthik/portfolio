@@ -4,7 +4,7 @@ import ProjectTag from "@/components/ProjectTag";
 import { motion, useInView } from "framer-motion";
 import AchievementCard from "@/components/card/AchievementCard";
 
-const tags= [ "Coding", "Symposium", "Certifications", "Hackathon", "Other"];
+const tags= [ "Coding", "Symposium", "Certifications", "Hackathon"];
 export type TAchievement = {
   title: string;
   description: string;
@@ -107,13 +107,6 @@ const achievementsList: TAchievement[] = [
     tag: ["Symposium","Competition"],
     date: "02-Dec-2022",
   },
-
-// \item \href{https://www.linkedin.com/posts/anish-karthik_top-nptel-pythonprogramming-activity-7009905729037889536-DjjW?utm_source=share&utm_medium=member_desktop}{\textbf{Top 1}\% \textbf{Elite Gold badge} Joy of Computing using \textbf{Python}{\faLink}}
-//     \item \href{https://www.linkedin.com/posts/anish-karthik_certificateofcompletion-nptel-cprogramming-activity-7009174502005772288-MaBN?utm_source=share&utm_medium=member_desktop}{\textbf{}\ \textbf{Elite Silver badge}Problem Solving Through Programming in C{\faLink}}
-//     \item \href{https://www.linkedin.com/posts/anish-karthik_nptel-databasemanagementsystem-sql-activity-7063540144347222016-IpAV?utm_source=share&utm_medium=member_desktop}{\textbf{Top 1}\% \textbf{Elite Silver badge} Data Base Management System {\faLink}}
-//     \item \href{https://www.linkedin.com/posts/anish-karthik_nptel-programming-datastructures-activity-7065359761919115264-8CQs?utm_source=share&utm_medium=member_desktop}{\textbf{Top 1}\% \textbf{Elite Gold badge} Programming, Data Structures, and Algorithms {\faLink}}
-//     \item \href{https://www.linkedin.com/posts/anish-karthik_nptel-programming-java-activity-7070760096527503360-_Aqp?utm_source=share&utm_medium=member_desktop}{\textbf{Top 1}\% \textbf{Elite Gold badge} Programming In \textbf{Java} {\faLink}}
-
   {
     title: "Joy of Computing using Python",
     skills: ["Python"],
@@ -184,10 +177,6 @@ const achievementsList: TAchievement[] = [
     tag: ["Hackathon"],
     date: "Sep-Nov 2023",
   },
-//   \href{https://leetcode.com/Anish-Karthik}{leetcode{\faLink}}  &1976 &Knight \\
-// \href{https://www.codechef.com/users/psna_28}{codechef{\faLink}}  &1763 &3 {\faStar} \\
-// \href{https://auth.geeksforgeeks.org/user/anishkarthik54321}{geeksforgeeks{\faLink}} &Rank 2 &380+Ques 
-// \href{https://www.linkedin.com/posts/anish-karthik_googlefarewellcontest-codingcontests-techcommunity-activity-7055582517029982208-RcCu?utm_source=share&utm_medium=member_desktop}{Google farewell Coding  Rank 1108 {\faLink}}
   {
     title: "Leetcode Knight (2,016)",
     skills: ["Coding", "DSA", "Problem Solving"],
@@ -227,7 +216,7 @@ const achievementsList: TAchievement[] = [
 ];
 
 const AchievementsSection = () => {
-  const [tag, setTag] = useState("Symposium");
+  const [tag, setTag] = useState("Coding");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const handleTagChange = (newTag: any) => {

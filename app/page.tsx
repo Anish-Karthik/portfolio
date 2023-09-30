@@ -1,11 +1,9 @@
 import AboutSection from '@/components/section/AboutSection'
 import AchievementsSection from '@/components/section/AchievementsSection'
-import EmailSection from '@/components/section/EmailSection'
 import Footer from '@/components/Footer'
 import HeroSection from '@/components/section/HeroSection'
 import Navbar from '@/components/Navbar'
 import ProjectsSection from '@/components/section/ProjectsSection'
-import Image from 'next/image'
 import SkillsSection from '@/components/section/SkillsSection'
 
 export default function Home() {
@@ -18,7 +16,6 @@ export default function Home() {
         <ProjectsSection />
         <SkillsSection />
         <AchievementsSection />
-        <EmailSection />
       </div>
       <Footer />
     </main>
