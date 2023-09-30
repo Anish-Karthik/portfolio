@@ -13,7 +13,7 @@ const AchievementCard = ({
   skills
 }: TAchievement) => {
   return (
-    <div className="bg-[#1F1F1F] rounded-xl p-4">
+    <div className="bg-[#1F1F1F] rounded-xl p-4 h-full ">
       <h3 className="text-xl font-bold text-white">{title}</h3>
       <p className="text-white text-sm">{description}</p>
       <div className="flex flex-row justify-start items-center mt-4">
