@@ -11,7 +11,7 @@ const projectsData = [
     description: "A Next.js React personal portfolio website.",
     image: "https://github.com/Anish-Karthik/Threads/assets/111771214/74184ab0-6024-4640-8b95-18512448eb53",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Anish-Karthik/portfolio",
     previewUrl: "/",
   },
   {
