@@ -33,7 +33,7 @@ const AchievementCard = ({
           <p className="text-violet-300 text-sm">{venue}</p>
           <p className="text-gray-400 text-sm">{date}</p>
         </div>
-        <Button variant={"outline"} className='bg-[#1F1F1F] hover:bg-purple-600'>
+        <Button variant={"outline"} className='bg-[#1F1F1F] hover:bg-purple-600 min-w-fit  '>
             <a
             href={link}
             target="_blank"

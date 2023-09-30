@@ -1,6 +1,5 @@
 "use client";
 import React, { useRef, useState } from "react";
-import dynamic from "next/dynamic";
 import ProjectTag from "@/components/ProjectTag";
 import { motion, useInView } from "framer-motion";
 import AchievementCard from "@/components/card/AchievementCard";
@@ -19,7 +18,7 @@ export type TAchievement = {
 
 const achievementsList: TAchievement[] = [
   {
-    title: "1st in Duo Datathon",
+    title: "1st in Datathon (Duo)",
     skills: ["SQL", "Database"],
     event: "Kurukshetra'23",
     venue: "Anna University Chennai",
@@ -29,7 +28,7 @@ const achievementsList: TAchievement[] = [
     date: "18-Apr-2023 to 21-Apr-2023",
   },     
   {
-    title: "1st in Duo Coder's Den",
+    title: "1st in Coder's Den (Duo)",
     skills: ["Coding", "DSA", "Problem Solving"],
     event: "Kreta'23",
     venue: "Thiagarajar College of Engineering",
@@ -39,7 +38,7 @@ const achievementsList: TAchievement[] = [
     date: "17-Apr-2023",
   },
   {
-    title: "1st in Trio Coding Competition",
+    title: "1st in Top Coders (Trio)",
     skills: ["Coding", "DSA", "Problem Solving", "SQL"],
     event: "Top Coders'23",
     venue: "Sudharsan Engineering College",
@@ -49,7 +48,7 @@ const achievementsList: TAchievement[] = [
     date: "18-Mar-2023",
   }, 
   {
-    title: "1st in Trio Coding Competition",
+    title: "1st in Coding Premier League (Trio)",
     skills: ["Coding", "DSA", "Problem Solving"],
     event: "YUGAM'23",
     venue: "Kumaraguru College of Technology",
@@ -59,7 +58,7 @@ const achievementsList: TAchievement[] = [
     date: "03-Mar-2023 to 04-Mar-2023",
   }, 
   {
-    title: "2nd in Duo Coding Competition",
+    title: "2nd in Code2Duo (Duo)",
     skills: ["Coding", "DSA", "Problem Solving"],
     event: "YUGAM'23",
     venue: "Kumaraguru College of Technology",
@@ -69,7 +68,7 @@ const achievementsList: TAchievement[] = [
     date: "03-Mar-2023 to 04-Mar-2023",
   },
   {
-    title: "2nd in Duo Codigo",
+    title: "2nd in Codigo (Duo)",
     skills: ["Coding", "DSA", "Problem Solving"],
     event: "Threads'23",
     venue: "Sona College of Technology",
@@ -79,7 +78,7 @@ const achievementsList: TAchievement[] = [
     date: "25-Feb-2023",
   }, 
   {
-    title: "1st in Duo Tech Quiz",
+    title: "1st in Tech Quiz (Duo)",
     skills: ["Tech", "Quiz"],
     event: "Gyan Mitra'23",
     venue: "Mepco Schlenk Engineering College",
@@ -89,7 +88,7 @@ const achievementsList: TAchievement[] = [
     date: "18-Feb-2023",
   },
   {
-    title: "2nd in Solo Codera",
+    title: "2nd in Codera (Solo)",
     skills: ["Coding", "DSA", "Problem Solving"],
     event: "Invente'22",
     venue: "SSN College of Engineering",
@@ -99,7 +98,7 @@ const achievementsList: TAchievement[] = [
     date: "02-Dec-2022",
   },
   {
-    title: "2nd in Solo Reverse Gear",
+    title: "2nd in Reverse Gear (Solo)",
     skills: ["Debugging", "Problem Solving", "C++", "Python"],
     event: "Invente'22",
     venue: "SSN College of Engineering",
@@ -127,8 +126,8 @@ const AchievementsSection = () => {
   };
   return (
     <section id="achievements">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Projects
+      <h2 className="pt-4 text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+        My Achievements
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         {tags.map((tagi, ind) => (
