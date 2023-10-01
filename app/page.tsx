@@ -5,6 +5,7 @@ import HeroSection from '@/components/section/HeroSection'
 import Navbar from '@/components/Navbar'
 import ProjectsSection from '@/components/section/ProjectsSection'
 import SkillsSection from '@/components/section/SkillsSection'
+import EmailSection from '@/components/section/EmailSection'
 
 export default function Home() {
   return (

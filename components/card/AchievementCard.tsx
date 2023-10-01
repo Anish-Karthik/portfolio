@@ -2,6 +2,7 @@
 import React from 'react'
 import { TAchievement } from '@/components/section/AchievementsSection'
 import { Button } from '../ui/button'
+import Image from 'next/image'
 
 const AchievementCard = ({
   title,
@@ -10,11 +11,18 @@ const AchievementCard = ({
   venue,
   link,
   date,
-  skills
+  skills,
+  icon,
+  text,
 }: TAchievement) => {
   return (
     <div className="bg-[#1F1F1F] rounded-xl p-4 h-full">
-      <h3 className="text-xl font-bold text-white">{title}</h3>
+      <div className="flex flex-row justify-start items-center mt-2">
+        {icon && 
+          <img src={icon} alt={event} className="w-8 h-8 mr-2" />
+        }
+        <h3 className="text-xl font-bold text-white">{title}</h3>
+      </div>
       <p className="text-white text-sm">{description}</p>
       <div className="flex flex-row justify-start items-center flex-wrap  mt-4 max-w-full">
         {skills.map((skill, index) => (
@@ -39,7 +47,7 @@ const AchievementCard = ({
             rel="noopener noreferrer"
             className="text-white text-sm"
           >
-            View Certificate
+            {text ||"View Certificate"}
           </a>
         </Button>
       </div>

@@ -40,7 +40,7 @@ const socials = [
 
 const Footer = () => {
   return (
-    <footer id="contact" className=" flex flex-col footer border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white">
+    <footer id="contact" className="mt-12 flex flex-col footer border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white">
       <div className="container py-12 sm:px-12 flex gap-2 justify-between">
         <Link
           href={"/"}

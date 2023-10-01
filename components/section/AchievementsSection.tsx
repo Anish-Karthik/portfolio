@@ -14,6 +14,8 @@ export type TAchievement = {
   tag: string[];
   date: string;
   skills: string[];
+  icon?: string;
+  text?: string;
 };
 
 const achievementsList: TAchievement[] = [
@@ -185,15 +187,19 @@ const achievementsList: TAchievement[] = [
     link: "https://leetcode.com/Anish-Karthik",
     tag: ["Coding"],
     date: "Oct 2022 - Present",
+    icon: "https://leetcode.com/static/images/LeetCode_logo.png",
+    text: "view profile",
   },
   {
     title: "Codechef 3 Star (1,763)",
     skills: ["Coding", "DSA", "Problem Solving"],
     event: "Codechef",
-    description: "Codechef 3 Star (1,763) and solved 485+ problems. Due 2-3 month codechef had no rated contests I Couldn't able to raise star rating.",
+    description: "Codechef 3 Star (1,763) and attended 25+ contests",
     link: "https://www.codechef.com/users/psna_28",
     tag: ["Coding"],
     date: "Oct 2022 - Present",
+    icon: "https://static.uacdn.net/thumbnail/external-app-icons/ce4fd2180646452aa0b03c3ffa3ef8e2.png",
+    text: "view profile",
   },
   {
     title: "Geeksforgeeks Rank 2",
@@ -203,6 +209,8 @@ const achievementsList: TAchievement[] = [
     link: "https://auth.geeksforgeeks.org/user/anishkarthik54321",
     tag: ["Coding"],
     date: "Oct 2022 - Present",
+    icon: "https://cynosure2k21.github.io/sponsors/GeeksforGeeks.png",
+    text: "view profile",
   },
   {
     title: "Google Farewell Coding Rank 1108",
@@ -212,6 +220,7 @@ const achievementsList: TAchievement[] = [
     link: "https://www.linkedin.com/posts/anish-karthik_googlefarewellcontest-codingcontests-techcommunity-activity-7055582517029982208-RcCu?utm_source=share&utm_medium=member_desktop",
     tag: ["Coding"],
     date: "15-Apr-2023",
+    icon: "https://cdn.icon-icons.com/icons2/836/PNG/512/Google_icon-icons.com_66793.png",
   },  
 ];
 
@@ -256,14 +265,7 @@ const AchievementsSection = () => {
           >
             <AchievementCard
               key={index}
-              title={achievement.title}
-              description={achievement.description}
-              event={achievement.event}
-              venue={achievement.venue}
-              link={achievement.link}
-              date={achievement.date}
-              skills={achievement.skills}
-              tag={achievement.tag}
+              {...achievement}
             />
           </motion.li>
         ))}
