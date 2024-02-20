@@ -16,9 +16,6 @@ import {
   cpp,
   c,
   java,
-  flask,
-  pytorch,
-  keras, 
 } from "@/public/assets";
 
 type Skill = {
@@ -102,21 +99,6 @@ const skills: Skill[] = [
     icon: java,
     level: 6
   },
-  {
-    name: 'Flask',
-    icon: flask,
-    level: 4
-  },
-  {
-    name: 'Pytorch',
-    icon: pytorch,
-    level: 3
-  },
-  {
-    name: 'Keras',
-    icon: keras,
-    level: 3
-  }
 ]
 
 const SkillsSection = () => {
